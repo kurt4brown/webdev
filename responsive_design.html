@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Our Menu</h1>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    h1 {
+        color: blue;
+        text-align: center;
+    }
+    .block{
+        background-color: gray;
+        margin: 1%;
+        padding: 10px;
+        border: 5px solid black;
+        float: left;
+    }
+    .item{
+        float:right;
+        padding: 3px;
+        border: 1px solid black;
+    }
+    #chicken{
+        background-color:pink;
+    }
+    #beef{
+        background-color: brown;
+    }
+    #sushi{
+        background-color: green;
+    }
+    /*Large Devices*/
+    @media (min-width: 992px){
+        .block{
+            width:32%;
+        }
+        #top{
+            float:left;
+        }
+        #bottom{
+            float: right;
+        }
+        #middle{
+            position: absolute;
+            left: 33%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px){
+        #top{
+            width: 48%;
+        }
+        #middle{
+            float: right;
+            width: 48%
+        }
+
+    }
+
+	</style>
+</head>
+
+<body>
+    <div id="top", class = "block">
+        <div id="chicken" class = "item">
+            Chicken
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Itaque, officia libero similique earum exercitationem reprehenderit ipsam
+            tempora vero fugiat optio nam commodi enim placeat, nihil facere laboriosam suscipit maxime temporibus!
+        </p>
+    </div>
+    <div id ="middle", class = "block">
+        <div id ="beef" class ="item">
+            Beef
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Itaque, officia libero similique earum exercitationem reprehenderit ipsam
+            tempora vero fugiat optio nam commodi enim placeat, nihil facere laboriosam suscipit maxime temporibus!
+        </p>
+    </div>
+    
+    <div id = "bottom", class = "block">
+        <div id="sushi" class = "item">
+            Sushi
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Itaque, officia libero similique earum exercitationem reprehenderit ipsam
+            tempora vero fugiat optio nam commodi enim placeat, nihil facere laboriosam suscipit maxime temporibus!
+        </p>
+    </div>
+</body>
+</html>
