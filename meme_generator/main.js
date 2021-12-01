@@ -7,6 +7,7 @@ let image;
 
 imageFileInput.addEventListener("change", (e) => {
   const imageDataUrl = URL.createObjectURL(e.target.files[0]);
+  console.log(e.target);
 
   image = new Image();
   image.src = imageDataUrl;

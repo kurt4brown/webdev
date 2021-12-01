@@ -47,14 +47,14 @@ li {
 nav>div{
     margin-top: 50%;
 }
-.selector{
-    float:right;
-    width: 89%;
-    margin-top: 10%;
-    color:goldenrod;
-}
+
 canvas{
     float:left;
-    width:50%;
+    width: 20%;
     margin-top:7%;
+    margin-left: 30%;
+}
+#imageFileInput{
+    color: goldenrod;
+    margin-top: 5%;
 }

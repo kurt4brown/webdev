@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+
 </head>
 <body>
+    <link rel="stylesheet" href="style.css">
+    
+
     <header id="heading">
         Meme Generator
     </header>
@@ -36,6 +38,9 @@
         <input type="text" id="topTextInput">
         <label>Bottom Text</label>
         <input type="text" id="bottomTextInput">
+        <div>
+            <input type="file" id ="imageFileInput">
+        </div>
         <!-- <label>
             Select a text alignment style:
         </label> -->
@@ -48,15 +53,13 @@
 
     <canvas id="meme"></canvas>
 
-    <div class = "selector">
-        <input type="file" id ="imageFileInput">
-    </div>
-
 
 
     <footer>
         Copyright Kurt Brown 2021
     </footer>
+
+    <script src="main.js"></script>
 
     
 </body>
